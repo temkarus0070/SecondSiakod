@@ -16,7 +16,7 @@ namespace Second
 
         public override void Logging(string message)
         {
-            Console.WriteLine($"Логируем в консоль {message}");
+            Console.WriteLine($"Логируем в консоль: {message}");
         }
     }
 }

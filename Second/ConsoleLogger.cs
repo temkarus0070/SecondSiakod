@@ -12,9 +12,11 @@ namespace Second
         {
         }
 
-        public override void Log(string message, Level level)
+
+
+        public override void Logging(string message)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Логируем в консоль {message}");
         }
     }
 }

@@ -10,6 +10,10 @@ namespace Second
     {
         static void Main(string[] args)
         {
+            Logger logger = new ConsoleLogger(Level.Info);
+            logger.Next = new DataBaseLogger(Level.Debug);
+            logger.Next.Next = new FileLogger(Level.Error);
+            logger.Log("kek", Level.Info);
         }
     }
 }
